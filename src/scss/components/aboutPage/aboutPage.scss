@@ -1,0 +1,54 @@
+.about_page{
+  li{
+    margin-bottom: 20px;
+  }
+  p {
+    color: $gray_darken;
+    font-size: 20px;
+  }
+  h3{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 800;
+  }
+}
+
+
+.about_page {
+  .aboutPage-wrapper-img{
+    border: 3px solid $gray_darken;
+    box-shadow:        5px 5px 2px 0px rgba(50, 50, 50, 0.3);
+  }
+  @media screen and (min-width: 768px) {
+    //display: grid;
+    li{
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      max-width: 1280px;
+
+    }
+    li:nth-child(even){
+      flex-direction: row-reverse;
+      //.aboutPage-wrapper-img{
+      //  border-right: 2px solid $yellow;
+      //}
+
+
+    }
+
+    .aboutPage-wrapper-img{
+      width: 40%;
+    }
+    .aboutPage-description{
+      width: 55%;
+    }
+
+  }
+  @media screen and (min-width: 1280px) {
+
+  }
+}

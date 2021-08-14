@@ -1,0 +1,65 @@
+.clients {
+  li{
+    overflow: hidden;
+  }
+}
+
+.clients-container {
+  @include container;
+  // margin: auto;
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    @media screen and (min-width: 768px){
+      font-size: 30px
+    }
+    @media screen and (min-width: 1280px){
+      font-size: 34px
+    }
+  }
+}
+
+.clients-list {
+
+ li{
+   text-align: center;
+   .integra {
+
+     fill: #fafafa;
+   }
+
+ }
+}
+
+
+.clients-list {
+  display: grid;
+  @media screen and (min-width: 320px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+
+  }
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: none;
+  }
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: none;
+    grid-column-gap: 20px;
+
+  }
+
+}
+.clients-staromak{
+  position: relative;
+  .staromak{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+}

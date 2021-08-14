@@ -1,0 +1,70 @@
+.gallery {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: Gilroy;
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+.gallery-container {
+  @include container;
+  margin: 79px;
+}
+//Вторая!!!!
+.gallery-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 47px; 
+
+  li {
+
+    font-weight: 400;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    //background-color: $backgroundFilter;
+    color: $black;
+    border-radius: 3px;
+    transition: all 0.250s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 10px;
+    @media screen and (min-width: 1280px){
+     font-size: 1.4rem;
+    }
+
+
+    &:hover,
+    &:focus {
+      border-top-color: $yellow;
+      border-right-color: $yellow;
+      border-left-color: $gray_darken;
+      border-bottom-color: $gray_darken;
+
+      color: $yellow
+    }
+
+    .active {
+      background-color: $gray;
+      color: $white;
+
+    }
+  }
+
+
+}
+
+.gallery-filter-list>li.active{
+  border-bottom: 2px solid $yellow;
+  border-left: 2px solid $yellow;
+  border-right: 2px solid $gray_darken;
+  border-top: 2px solid $gray_darken;
+}
+.gallery__card{
+  padding: 20px;
+  max-height: 30%;
+  max-width: 1200px;
+  // border: 2px solid #000;
+  border-radius: 5px;
+}

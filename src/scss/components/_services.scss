@@ -1,0 +1,112 @@
+.services {
+
+}
+
+.services-container {
+  @include container;
+}
+.services-header{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  @media screen and (min-width: 768px){
+    font-size: 30px
+  }
+  @media screen and (min-width: 1280px){
+    font-size: 34px
+  }
+
+}
+
+.services-list{
+  margin: 0;
+  padding-left: 30px;
+  @media screen and (min-width: 768px){
+    margin: 0 auto;
+    width: 60vw;
+  }
+li{
+  margin-bottom: 20px;
+
+}
+  p{
+    position: relative;
+    font-family: Roboto-Regular;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    color: $black;
+    @media screen and (min-width: 768px){
+      font-size: 18px;
+    }
+    &::before{
+      position: absolute;
+      content: '';
+      width: 13px;
+      height: 13px;
+
+      left: -25px;
+      top: -2px;
+      background-image: url("../../img/checked.svg");
+      background-size: 13px 13px;
+    }
+  }
+}
+.about-information{
+  margin-top: 40px;
+  padding-left: 20px;
+  @media screen and (min-width: 768px){
+    padding-left: 0;
+  }
+  li{
+    position: relative;
+    padding-left: 0;
+    display: flex;
+    width: 50%;
+
+    margin: 0 auto;
+    padding: 20px 0;
+
+    align-items: center;
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px){
+      width: 80%;
+    }
+    strong{
+      display: block;
+      font-size: 24px;
+      margin-right: 20px;
+      @media screen and (min-width: 768px){
+        font-size:30px ;
+      }
+    }
+    span{
+      text-transform: uppercase;
+      display: block;
+      font-weight: 600;
+      font-size: 12px;
+      color: $black;
+      @media screen and (min-width: 768px){
+        font-size: 16px;
+      }
+    }
+    .about-style{
+      position: absolute;
+      width: 100%;
+      height: 30px;
+      bottom: 15px;
+      left: -10px;
+      border-left: 2px solid $activ-link;
+      border-bottom: 2px solid $activ-link;
+
+    }
+  }
+}
+.about-information{
+  @media screen and (min-width: 768px){
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+    grid-column-gap: 30px;
+  }
+}

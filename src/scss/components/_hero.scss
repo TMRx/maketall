@@ -1,0 +1,78 @@
+
+.hero {
+}
+
+.hero-container {
+  @include container;
+}
+//Главная!!!
+.hero {
+  margin-top: 76px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-bottom: 120px;
+  @media screen and (min-width: 768px){
+    .hero-container{
+      padding: 100px 0;
+    }
+  }
+}
+
+
+.hero h1 {
+  font-family: Gilroy;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.615;
+  letter-spacing: 0.06em;
+  text-align: center;
+  @media screen and (min-width: 768px){
+    font-size: 36px;
+    padding: 120px 0 60px;
+  }
+
+  span{
+    color: $yellow;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+  }
+}
+
+.modal-open {
+  display: inline-block;
+  font-family:Montserrat ;
+  font-size: 14px;
+  //background-color: $yellow;
+  padding: 10px 15px;
+  text-align: center;
+  color: $black;
+ letter-spacing: 0.06em;
+  font-weight: 700;
+  color: $white;
+  border-left: 2px solid $yellow;
+  border-bottom: 2px solid $yellow;
+  cursor: pointer;
+  @media screen and (min-width: 768px){
+    font-size: 20px;
+    border-left: 4px solid $yellow;
+    border-bottom: 4px solid $yellow;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  @include bgImage("../../img/hero1.jpg", "../../img/hero1.jpg");
+}
+
+@media screen and (min-width: 376px) {
+  @include bgImage("../../img/hero1.jpg", "../../img/hero1.jpg");
+}
+
+@media screen and (min-width: 1200px) {
+  @include bgImage("../../img/hero1.jpg", "../../img/hero1.jpg");
+}
